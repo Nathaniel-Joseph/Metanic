@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Poppins&family=Roboto&display=swap');
 html{
   overflow-x: hidden;
 }
@@ -7,6 +8,7 @@ body{
   padding: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -14,17 +16,38 @@ header{
   min-height: 30px;
 }
 
+button:focus{
+  box-shadow: none !important;
+}
+
 header > div > span{
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .hero{
-  height: 105vh;
+  height: 110vh;
   background-color: #3375BB;
 }
 
+.low-show{
+  opacity: 0.5;
+}
+
+.btn-prime{
+  background-color: #3375bb38;
+  border-radius: 50px;
+  padding: 15px 20px;
+  color: navy;
+  transition: .2s ease-in-out;
+}
+
+.btn-prime:hover{
+  background: #3375BB;
+  color: #fff;
+}
+
 .nav-link{
-  font-weight: 600;
+  font-weight: 500;
   color: #fff !important;
 }
 
@@ -33,12 +56,25 @@ header > div > span{
 }
 
 .dropdown-item{
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.bg-new{
+  background: #3375BB;
+}
+
+.higher{
+  padding-top: 7%;
+  padding-bottom: 2%;
 }
 
 .dropdown-item:hover{
   background: transparent !important;
   color: #3375BB;
+}
+
+.show-less{
+  opacity: 0.8;
 }
 
 .hero > .container > .row > .col-md-6:nth-child(1){
@@ -67,6 +103,15 @@ option{
   font-size: 1.3rem;
 }
 
+.sale-p{
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+.sale-btn:hover{
+  color: navy;
+}
+
 .input{
   height: 50px;
   border-radius: 50px 0px 0px 50px;
@@ -92,9 +137,78 @@ section:nth-child(3) {
   margin-top: 10%;
 }
 
-section:nth-child(3) > p{
-  font-weight: 600;
+.sec-bg{
+  margin-top: 10%;
+}
+
+.con-div{
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.con-div > p{
+  font-weight: 500;
   opacity: 0.8;
+}
+
+section:nth-child(3) > p{
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.blog-text{
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.blog-text2{
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: .9rem !important;
+}
+
+.text-new{
+  color: #3375BB;
+}
+
+.blog-link{
+  transition: .3s ease-in-out;
+}
+
+.blog-link:hover{
+  color: #3375BB !important;
+}
+
+.icon{
+  background: #3375bb15;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.card-title{
+  font-weight: 600;
+}
+
+.card-text{
+  font-weight: 500;
+  width: 100%;
+}
+
+.card-border{
+  border: 2px solid #3375BB;
+}
+
+.card{
+  border-radius: 20px;
+}
+
+.text-new{
+  color: blue;
+}
+
+footer{
+  background: #3375BB;
+  height: 60vh;
 }
 
 @media (max-width: 425px) {
@@ -102,7 +216,222 @@ section:nth-child(3) > p{
     display: none;
   }
 
+  footer{
+    height: 100%;
+    text-align: center;
+  }
+
+  .g-m{
+    margin-top: 50px;
+  }
+
+  .g-m > .col > .card{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+
+  .price-card{
+    display: none !important;
+  }
+
+  .no-text{
+    display: none;
+  }
+
   .hero{
-    height: 180vh;
+    height: 149vh;
+  }
+
+  .icon{
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  .card{
+    text-align: center;
+  }
+
+  .navbar-toggler{
+    margin-left: 40px;
+  }
+
+  .banner-text{
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero{
+    height: 159vh !important;
+  }
+
+  .navbar-toggler{
+    margin-left: 80%;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero{
+    height: 170vh;
+  }
+
+  .navbar-toggler{
+    margin-left: 80%;
+    margin-top: -55px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .banner{
+    width: 100%;
+    margin-left: 0% !important;
+  }
+
+  .navbar-brand > img{
+    width: 50%;
+  }
+
+  .navbar-toggler{
+    margin-left: 79%;
+    margin-top: -48px;
+  }
+
+  .col-nav{
+    display: none !important;
+  }
+
+  .banner-text{
+    font-size: 2rem !important;
+  }
+
+  .p-banner{
+    font-size: 1rem !important;
+  }
+
+  .hero{
+    height: 160vh;
+  }
+
+  .icon{
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  .card{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-nav{
+    width: 0%;
+  }
+  
+  .img-ft{
+    width: 100% !important;
+  }
+
+  .card{
+    width: 100% !important;
+  }
+
+  .g-m > .col > .card{
+    margin-left: 0% !important;
+  }
+
+  .g-m > .col > .card > .card-body > .card-title{
+    font-size: 1.1rem;
+  }
+
+  .g-m{
+    margin-top: 50px;
+  }
+
+  .no-img{
+    display: none;
+  }
+
+  .price-card{
+    display: block;
+    width: 100%;
+  }
+  
+  .price-col{
+    width: 100% !important;
+  }
+
+  .navbar-brand > img{
+    width: 80%;
+  }
+
+  .banner-text{
+    font-size: 2rem !important;
+  }
+
+  .hero{
+    height: 60vh;
+  }
+
+  header{
+    display: none;
+  }
+
+  .card-block{
+    display: block;
+  }
+
+  .card-col{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero{
+    height: 60vh;
+  }
+
+  footer{
+    height: 50%;
+  }
+
+  .card{
+    width: 100% !important;
+  }
+
+  .g-m > .col > .card{
+    margin-left: 0% !important;
+  }
+
+  .g-m > .col > .card > .card-body > .card-title{
+    font-size: 1.1rem;
+  }
+
+  .g-m{
+    margin-top: 50px;
+  }
+
+  .no-img{
+    display: none;
+  }
+
+  .col-nav{
+    width: 20%;
+  }
+  
+  .price-card{
+    display: block;
+    width: 100%;
+  }
+  
+  .price-col{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero{
+    height: 140vh;
   }
 }
