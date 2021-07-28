@@ -1,0 +1,108 @@
+html{
+  overflow-x: hidden;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header{
+  background: #3375BB;
+  min-height: 30px;
+}
+
+header > div > span{
+  font-weight: 600;
+}
+
+.hero{
+  height: 105vh;
+  background-color: #3375BB;
+}
+
+.nav-link{
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.dropdown-menu{
+  border-radius: 0%;
+}
+
+.dropdown-item{
+  font-weight: 600;
+}
+
+.dropdown-item:hover{
+  background: transparent !important;
+  color: #3375BB;
+}
+
+.hero > .container > .row > .col-md-6:nth-child(1){
+  margin-top: 15%;
+}
+
+.hero > .container > .row > .col-md-6:nth-child(2){
+  margin-top: 9%;
+}
+
+.hero > .container > .row > .col-md-6 > h1{
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+select{
+  outline: none;
+  box-shadow: none !important;
+}
+
+option{
+  box-shadow: none;
+}
+
+.hero > .container > .row > .col-md-6 > p{
+  font-size: 1.3rem;
+}
+
+.input{
+  height: 50px;
+  border-radius: 50px 0px 0px 50px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.form-btn{
+  border-radius: 0px 50px 50px 0px;
+}
+
+input:focus{
+  box-shadow: none !important;
+}
+
+.input::-webkit-input-placeholder{
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+section:nth-child(3) {
+  margin-top: 10%;
+}
+
+section:nth-child(3) > p{
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+@media (max-width: 425px) {
+  header{
+    display: none;
+  }
+
+  .hero{
+    height: 180vh;
+  }
+}
